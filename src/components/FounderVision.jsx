@@ -16,8 +16,8 @@ const FounderVision = () => {
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', textAlign: 'center' }}>
                     {[
-                        { name: "Avi Prakash Jaiswal", role: "Co-Founder", bio: "Strategic lead for business operations and market disruption, dedicated to transforming complex engineering into seamless, logic ready user experiences. Drives the company's growth strategy and product-market fit to set a new global standard for rapid prototyping." },
-                        { name: "Soham Nalawade", role: "Co-Founder", bio: "Technical architect of the ProtoPulse ecosystem, specializing in deep hardware-software integration and industrial automation. Lead engineer for the proprietary multi-stage assembly line, ensuring every system delivers industrial-grade precision in a desktop footprint." }
+                        { name: "Soham Nalawade", role: "Co-Founder", bio: "Technical architect of the ProtoPulse ecosystem, specializing in deep hardware-software integration and industrial automation. Lead engineer for the proprietary multi-stage assembly line, ensuring every system delivers industrial-grade precision in a desktop footprint." },
+                        { name: "Avi Prakash Jaiswal", role: "Co-Founder", bio: "Strategic lead for business operations and market disruption, dedicated to transforming complex engineering into seamless, logic ready user experiences. Drives the company's growth strategy and product-market fit to set a new global standard for rapid prototyping." }
                     ].map((founder, i) => (
                         <div key={i} style={{ borderTop: '1px solid var(--color-border)', paddingTop: '1rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                             <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', textTransform: 'uppercase', color: '#fff' }}>{founder.name}</h3>

@@ -54,7 +54,7 @@ const NarrativeHook = () => {
                     Competitors leave you with a bare board and a bag of components. We deliver a <span style={highlightStyle}>logic-ready assembly</span>.
                     <br /><br />
                     If you are building an RC car with a logic-controlled turret, you need to test the signals covering the motor drivers, not just the copper traces.
-                    NexusFlow gets you to the <strong>signal-testing phase</strong> in one hour.
+                    ProtoPulse gets you to the <strong>signal-testing phase</strong> in one hour.
                 </p>
                 {/* Visual accent: A "Signal" line graphic */}
                 <div style={{

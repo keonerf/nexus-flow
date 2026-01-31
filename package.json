@@ -1,5 +1,6 @@
 {
-  "name": "nexus-flow",
+  "name": "protopulse",
+  "description": "ProtoPulse - The Future of Hardware Prototyping",
   "private": true,
   "version": "0.0.0",
   "type": "module",
