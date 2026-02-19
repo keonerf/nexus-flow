@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = () => {
+const Footer: React.FC = () => {
     return (
         <footer style={{
             padding: '4rem 2rem',

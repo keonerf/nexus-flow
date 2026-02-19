@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
-const Hero = () => {
-    const containerRef = useRef(null);
+const Hero: React.FC = () => {
+    const containerRef = useRef<HTMLElement>(null);
     const { scrollYProgress } = useScroll({
         target: containerRef,
         offset: ["start start", "end start"]
@@ -62,7 +62,7 @@ const Hero = () => {
                             color: 'var(--color-text-secondary)',
                             textTransform: 'uppercase',
                             letterSpacing: '0.2em',
-                            marginBottom: '2rem' // Reduced from 4rem
+                            marginBottom: '2rem'
                         }}
                     >
                         From Gerber to Prototype in <span style={{ color: 'var(--color-text-primary)' }}>60 Minutes</span>

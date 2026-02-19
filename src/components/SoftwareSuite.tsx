@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SoftwareSuite = () => {
+const SoftwareSuite: React.FC = () => {
     return (
         <section id="software" style={{ padding: '8rem 5vw', background: 'var(--color-bg-deep)', position: 'relative' }}>
             <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -35,7 +35,7 @@ const SoftwareSuite = () => {
                     }}>
                         <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', marginBottom: '1rem', color: '#fff' }}>Unified Pipeline</h3>
                         <p style={{ color: 'var(--color-text-secondary)', lineHeight: '1.6' }}>
-                            Integrates directly with your existing EDA tools (Altium, KiCad, Eagle). Automatically processes logic and generates manufacturing-ready <strong>Gerber & STL files</strong> for the ProtoBlock-1.
+                            Integrates directly with your existing EDA tools (Altium, KiCad, Eagle). Automatically processes logic and generates manufacturing-ready <strong>Gerber &amp; STL files</strong> for the ProtoBlock-1.
                         </p>
                     </div>
 

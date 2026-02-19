@@ -1,12 +1,22 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useEffect } from 'react';
+import { motion } from 'framer-motion';
 
-const Navbar = () => {
-    const [scrolled, setScrolled] = useState(false);
+const linkStyle: React.CSSProperties = {
+    fontFamily: 'var(--font-body)',
+    textTransform: 'uppercase',
+    fontSize: '0.75rem',
+    letterSpacing: '0.1em',
+    cursor: 'pointer',
+    color: 'rgba(255,255,255,0.8)',
+    textDecoration: 'none',
+    transition: 'color 0.3s ease'
+};
+
+const Navbar: React.FC = () => {
 
     useEffect(() => {
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 50);
+        const handleScroll = (): void => {
+            // Scroll tracking for future use
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
@@ -51,17 +61,6 @@ const Navbar = () => {
             </div>
         </motion.nav>
     );
-};
-
-const linkStyle = {
-    fontFamily: 'var(--font-body)',
-    textTransform: 'uppercase',
-    fontSize: '0.75rem',
-    letterSpacing: '0.1em',
-    cursor: 'pointer',
-    color: 'rgba(255,255,255,0.8)',
-    textDecoration: 'none',
-    transition: 'color 0.3s ease'
 };
 
 export default Navbar;

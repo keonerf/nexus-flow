@@ -8,23 +8,17 @@ import BusinessCase from './components/BusinessCase';
 import SoftwareSuite from './components/SoftwareSuite';
 import MediaGallery from './components/MediaGallery';
 import Footer from './components/Footer';
-import Lenis from 'lenis'; // Import Lenis
+import Lenis from 'lenis';
 import './App.css';
 
-function App() {
+function App(): React.JSX.Element {
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      direction: 'vertical',
-      gestureDirection: 'vertical',
-      smooth: true,
-      mouseMultiplier: 1,
-      smoothTouch: false,
-      touchMultiplier: 2,
+      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     });
 
-    function raf(time) {
+    function raf(time: number): void {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }

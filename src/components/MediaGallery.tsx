@@ -1,12 +1,7 @@
-import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
 
-const MediaGallery = () => {
-    const containerRef = useRef(null);
-    const { scrollYProgress } = useScroll({
-        target: containerRef,
-        offset: ["start end", "end start"]
-    });
+const MediaGallery: React.FC = () => {
 
     // 3D Rotation simulation
     return (
@@ -20,9 +15,9 @@ const MediaGallery = () => {
         }}>
             <h2 style={{
                 fontFamily: 'var(--font-display)',
-                fontSize: 'clamp(3rem, 6vw, 5rem)', // Compressed
+                fontSize: 'clamp(3rem, 6vw, 5rem)',
                 textAlign: 'center',
-                marginBottom: '1rem' // Tighter
+                marginBottom: '1rem'
             }}>
                 Gallery
             </h2>
@@ -51,7 +46,7 @@ const MediaGallery = () => {
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen
-                        style={{ display: 'block' }} // Removed filters
+                        style={{ display: 'block' }}
                     ></iframe>
                 </div>
 
@@ -62,7 +57,7 @@ const MediaGallery = () => {
                     viewport={{ once: true }}
                     style={{
                         gridColumn: 'span 6',
-                        aspectRatio: '16/9', // Match video aspect ratio
+                        aspectRatio: '16/9',
                         background: '#111',
                         border: '1px solid var(--color-border)',
                         overflow: 'hidden',
@@ -89,7 +84,7 @@ const MediaGallery = () => {
                     transition={{ delay: 0.1 }}
                     style={{
                         gridColumn: 'span 6',
-                        aspectRatio: '16/9', // Match video
+                        aspectRatio: '16/9',
                         background: '#111',
                         border: '1px solid var(--color-border)',
                         overflow: 'hidden',

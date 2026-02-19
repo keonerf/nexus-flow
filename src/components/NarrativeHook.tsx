@@ -1,9 +1,9 @@
 import React from 'react';
 
-const NarrativeHook = () => {
-    const sectionStyle = {
+const NarrativeHook: React.FC = () => {
+    const sectionStyle: React.CSSProperties = {
         padding: '8rem 2rem',
-        backgroundColor: '#000', // Pure black for high contrast
+        backgroundColor: '#000',
         color: '#fff',
         display: 'flex',
         flexDirection: 'column',
@@ -12,7 +12,7 @@ const NarrativeHook = () => {
         minHeight: '60vh',
     };
 
-    const hookHeadlineStyle = {
+    const hookHeadlineStyle: React.CSSProperties = {
         fontSize: '3.5rem',
         fontWeight: '900',
         textAlign: 'center',
@@ -23,14 +23,14 @@ const NarrativeHook = () => {
         maxWidth: '900px',
     };
 
-    const subCopyStyle = {
+    const subCopyStyle: React.CSSProperties = {
         fontSize: '1.5rem',
         color: 'var(--color-primary)',
         marginBottom: '3rem',
         fontWeight: '500',
     };
 
-    const exampleBoxStyle = {
+    const exampleBoxStyle: React.CSSProperties = {
         border: '1px solid var(--color-border)',
         padding: '3rem',
         maxWidth: '800px',
@@ -39,7 +39,7 @@ const NarrativeHook = () => {
         position: 'relative',
     };
 
-    const highlightStyle = {
+    const highlightStyle: React.CSSProperties = {
         color: 'var(--color-primary)',
         fontWeight: 'bold',
     };

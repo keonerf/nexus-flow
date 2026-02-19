@@ -1,14 +1,14 @@
 import React from 'react';
 
-const BusinessCase = () => {
-    const sectionStyle = {
+const BusinessCase: React.FC = () => {
+    const sectionStyle: React.CSSProperties = {
         padding: '6rem 2rem',
         background: '#0a0a0a',
         color: '#fff',
         textAlign: 'center',
     };
 
-    const tableStyle = {
+    const tableStyle: React.CSSProperties = {
         width: '100%',
         maxWidth: '900px',
         margin: '4rem auto',
@@ -16,7 +16,7 @@ const BusinessCase = () => {
         border: '1px solid #333',
     };
 
-    const thStyle = {
+    const thStyle: React.CSSProperties = {
         padding: '1.5rem',
         borderBottom: '2px solid var(--color-primary)',
         textTransform: 'uppercase',
@@ -24,13 +24,13 @@ const BusinessCase = () => {
         color: 'var(--color-primary)',
     };
 
-    const tdStyle = {
+    const tdStyle: React.CSSProperties = {
         padding: '1.5rem',
         borderBottom: '1px solid #333',
         fontSize: '1.2rem',
     };
 
-    const highlightStyle = {
+    const highlightStyle: React.CSSProperties = {
         color: 'var(--color-primary)',
         fontWeight: 'bold',
         fontSize: '1.3rem',
