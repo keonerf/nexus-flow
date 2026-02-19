@@ -24,7 +24,7 @@ const MediaGallery = () => {
                 textAlign: 'center',
                 marginBottom: '1rem' // Tighter
             }}>
-                Visual <span style={{ color: 'var(--color-accent)' }}>Evidence</span>
+                Gallery
             </h2>
 
             {/* Symmetrical Grid: Video Key, Images Flanking */}
